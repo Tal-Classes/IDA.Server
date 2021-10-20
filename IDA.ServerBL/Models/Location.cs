@@ -5,18 +5,16 @@ using System.Collections.Generic;
 
 namespace IDA.ServerBL.Models
 {
-    public partial class User
+    public partial class Location
     {
-        public User()
+        public Location()
         {
             Costomers = new HashSet<Costomer>();
             Workers = new HashSet<Worker>();
         }
 
-        public string UserName { get; set; }
-        public string Email { get; set; }
-        public string FirstName { get; set; }
-        public string UserPswd { get; set; }
+        public int Lid { get; set; }
+        public string City { get; set; }
         public string Adress { get; set; }
 
         public virtual ICollection<Costomer> Costomers { get; set; }
