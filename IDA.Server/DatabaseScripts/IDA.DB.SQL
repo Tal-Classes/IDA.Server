@@ -1,4 +1,5 @@
-
+use [master] 
+create Database [IDA.DB]
 Use [IDA.DB]
 Go
 
