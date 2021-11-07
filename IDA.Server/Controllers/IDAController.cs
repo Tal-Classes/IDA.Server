@@ -13,12 +13,12 @@ using System.IO;
 
 namespace IDA.Server.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("IDAAPI")]
     [ApiController]
-    public class Controller : ControllerBase
+    public class IDAController : ControllerBase
     {
         IDADBContext context;
-        public Controller(IDADBContext context)
+        public IDAController(IDADBContext context)
         {
             this.context = context;
 
