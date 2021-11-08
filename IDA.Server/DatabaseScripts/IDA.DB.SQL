@@ -112,6 +112,25 @@ ALTER TABLE
     "JobOffer" ADD CONSTRAINT "joboffer_status_foreign" FOREIGN KEY("Status") REFERENCES "Status"("StatusId");
 
 
+    USE [IDA.DB]
+GO
 
+INSERT INTO [dbo].[User]
+           ([UserName]
+           ,[Email]
+           ,[FirstName]
+           ,[LastName]
+           ,[UserPswd]
+           ,[Adress]
+           ,[IsWorker])
+     VALUES
+           ('danielle3'
+           ,'danielle.oz@gmail.com'
+           ,'danielle'
+           ,'oz'
+           ,'1234'
+           ,'telaviv'
+           ,'false')
+GO
 
 
