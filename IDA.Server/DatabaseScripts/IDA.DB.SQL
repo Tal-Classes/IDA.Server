@@ -20,15 +20,16 @@ CREATE TABLE "Costomers"(
     "CId" INT NOT NULL,
     "UserName" NVARCHAR(255) NOT NULL,
     "Lid" INT NOT NULL,
-    "services" NVARCHAR (255) NOT NULL,
-    "Location" FLOAT NOT NULL
+
 );
 ALTER TABLE
     "Costomers" ADD CONSTRAINT "costomers_cid_primary" PRIMARY KEY("CId");
 CREATE TABLE "Workers"(
     "WId" INT NOT NULL,
     "UserName" NVARCHAR(255) NOT NULL,
-    "LId" INT NOT NULL
+    "LId" INT NOT NULL,
+    "services" NVARCHAR (255) NOT NULL,
+    "Location" FLOAT NOT NULL
 );
 ALTER TABLE
     "Workers" ADD CONSTRAINT "workers_wid_primary" PRIMARY KEY("WId");

@@ -49,11 +49,6 @@ namespace IDA.ServerBL.Models
                     .ValueGeneratedNever()
                     .HasColumnName("CId");
 
-                entity.Property(e => e.Services)
-                    .IsRequired()
-                    .HasMaxLength(255)
-                    .HasColumnName("services");
-
                 entity.Property(e => e.UserName)
                     .IsRequired()
                     .HasMaxLength(255);
@@ -249,6 +244,11 @@ namespace IDA.ServerBL.Models
                     .HasColumnName("WId");
 
                 entity.Property(e => e.Lid).HasColumnName("LId");
+
+                entity.Property(e => e.Services)
+                    .IsRequired()
+                    .HasMaxLength(255)
+                    .HasColumnName("services");
 
                 entity.Property(e => e.UserName)
                     .IsRequired()
