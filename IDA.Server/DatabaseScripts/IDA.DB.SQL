@@ -110,3 +110,8 @@ ALTER TABLE
     "Workers" ADD CONSTRAINT "workers_lid_foreign" FOREIGN KEY("LId") REFERENCES "Location"("LId");
 ALTER TABLE
     "JobOffer" ADD CONSTRAINT "joboffer_status_foreign" FOREIGN KEY("Status") REFERENCES "Status"("StatusId");
+
+
+
+
+
