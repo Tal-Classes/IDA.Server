@@ -8,15 +8,20 @@ CREATE TABLE "User"(
     "UserName" NVARCHAR(255) NOT NULL,
     "Email" NVARCHAR(255) NOT NULL,
     "FirstName" NVARCHAR(255) NOT NULL,
+    "LastName" NVARCHAR(255) NOT NULL,
     "UserPswd" NVARCHAR(255) NOT NULL,
-    "Adress" NVARCHAR(255) NOT NULL
+    "Adress" NVARCHAR(255) NOT NULL,
+    "IsWorker" BIT NOT NULL
 );
 ALTER TABLE
     "User" ADD CONSTRAINT "user_username_primary" PRIMARY KEY("UserName");
+
 CREATE TABLE "Costomers"(
     "CId" INT NOT NULL,
     "UserName" NVARCHAR(255) NOT NULL,
-    "Lid" INT NOT NULL
+    "Lid" INT NOT NULL,
+    "services" NVARCHAR (255) NOT NULL,
+    "Location" FLOAT NOT NULL
 );
 ALTER TABLE
     "Costomers" ADD CONSTRAINT "costomers_cid_primary" PRIMARY KEY("CId");
